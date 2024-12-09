@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Thenux AI Assist</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="motion-background">
+        <header>
+            <h1 class="animated-text">Welcome to Thenux AI Assist</h1>
+            <p>Let Thenux assist you with AI-powered solutions.</p>
+            <button id="theme-toggle" class="toggle-theme-btn">Toggle Theme</button>
+
+        </header>
+ <!-- Language Selector -->
+<select id="language-selector">
+    <option value="en">English</option>
+    <option value="si">Sinhala</option>
+    <option value="es">Spanish</option>
+    <option value="fr">French</option>
+</select>
+
+<!-- User Profile -->
+<div class="user-profile">
+    <img id="avatar-display" src="default-avatar.png" alt="User Avatar">
+    <label for="name">Enter Your Name:</label>
+    <input type="text" id="name" placeholder="Enter your name">
+    
+    <label for="avatar">Choose an Avatar:</label>
+    <input type="file" id="avatar" accept="image/*">
+    
+    <button onclick="saveProfile()">Save Profile</button>
+    <button id="reset-profile-btn">Reset Profile</button>
+</div>
+<div class="user-profile-section">
+    <img src="https://i.ibb.co/sgq3D5w/Lovepik-com-380113995-abstract-tech-data-circle-future-user-graphics-technology-interface.png" alt="User Avatar">
+    <div id="user-name-display" class="user-name-display">Hello, User!</div>
+</div>
+
+
+
+        <!-- Quick Replies -->
+        <div class="quick-replies">
+            <button onclick="quickReply('Hello!')">Hello!</button>
+            <button onclick="quickReply('Tell me a joke')">Tell me a joke</button>
+            <button onclick="quickReply('What is AI?')">What is AI?</button>
+        </div>
+
+        <!-- AI Chatbot Section -->
+        <section class="chatbot">
+            <h2>AI Chatbot</h2>
+            <div id="chat-box"></div>
+            <div class="chat-input-area">
+                <textarea id="user-input" placeholder="Ask something..." rows="1"></textarea>
+                <button id="voice-btn">🎤</button>
+                <button id="send-btn">Send</button>
+                <div id="user-name-display"></div>
+                <div id="avatar-display"></div>
+            </div>
+        </section>
+
+        <!-- Music Player -->
+        <section class="music-player">
+            <h2>Relax with Music</h2>
+            <audio controls>
+                <source src="https://youtu.be/XUIXIfm4wQY?si=4G6YNK6GU8zz8XuB" type="audio/mpeg">
+                Your browser does not support the audio element.
+            </audio>
+        </section>
+
+        <!-- Footer -->
+        <footer>
+            <p>&copy; 2024 Thenux AI Assist</p>
+        </footer>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

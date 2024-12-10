@@ -62,6 +62,13 @@ themeToggleButton.addEventListener("click", () => {
     const currentTheme = document.body.classList.contains("dark-theme") ? "dark" : "light";
     localStorage.setItem("theme", currentTheme);
 });
+// Animate Theme Toggle on Click
+themeToggle.addEventListener("click", () => {
+    themeToggle.style.transform = "rotate(360deg)";
+    setTimeout(() => {
+      themeToggle.style.transform = "rotate(0deg)";
+    }, 500);
+  });
 
 // Load theme preference on page load
 window.addEventListener("DOMContentLoaded", () => {

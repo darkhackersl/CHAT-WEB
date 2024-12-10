@@ -63,12 +63,12 @@ themeToggleButton.addEventListener("click", () => {
     localStorage.setItem("theme", currentTheme);
 });
 // Animate Theme Toggle on Click
-themeToggle.addEventListener("click", () => {
+/*themeToggle.addEventListener("click", () => {
     themeToggle.style.transform = "rotate(360deg)";
     setTimeout(() => {
       themeToggle.style.transform = "rotate(0deg)";
     }, 500);
-  });
+  });*/
 
 // Load theme preference on page load
 window.addEventListener("DOMContentLoaded", () => {

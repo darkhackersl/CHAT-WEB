@@ -501,6 +501,60 @@ body.dark-theme .toggle-theme-btn:hover {
     color: #212121;
 }
 
+/* Style for the Next Button */
+#next-btn {
+    background-color: #007bff;
+    color: white;
+    font-size: 18px;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+    text-transform: uppercase;
+    font-weight: bold;
+    display: inline-block;
+    margin-top: 20px;
+}
+
+/* Hover effect */
+#next-btn:hover {
+    background-color: #0056b3;
+    transform: translateY(-5px); /* Slightly lift the button */
+    box-shadow: 0 6px 8px rgba(0, 0, 0, 0.3);
+}
+
+/* Cool animation when the button appears */
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+#next-btn {
+    animation: fadeInUp 0.5s ease-in-out;
+}
+
+/* Focus effect */
+#next-btn:focus {
+    outline: none;
+    border: 2px solid #0056b3;
+}
+
+/* Add a subtle glow effect on hover */
+#next-btn:hover {
+    background-color: #0056b3;
+    box-shadow: 0 0 15px rgba(0, 123, 255, 0.5);
+    transform: scale(1.1); /* Slightly enlarge the button on hover */
+}
+
+
 /* Add a nice hover effect to the name */
 .user-name-display:hover {
     color: #4caf50;

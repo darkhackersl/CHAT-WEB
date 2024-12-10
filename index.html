@@ -76,5 +76,21 @@
         </footer>
     </div>
     <script src="script.js"></script>
+
+<script>
+    const audioPlayer = document.getElementById('audio-player');
+    const playPauseBtn = document.getElementById('play-pause-btn');
+
+    playPauseBtn.addEventListener('click', () => {
+        if (audioPlayer.paused) {
+            audioPlayer.play();
+            playPauseBtn.textContent = 'Pause';
+        } else {
+            audioPlayer.pause();
+            playPauseBtn.textContent = 'Play';
+        }
+    });
+</script>
+
 </body>
 </html>

@@ -1,6 +1,10 @@
 /* General Styles */
     body {
       display: flex;
+         margin: 0;
+    font-family: 'Arial', sans-serif;
+    color: #ffffff;
+    text-align: center;
       justify-content: center;
       align-items: center;
       min-height: 100vh;

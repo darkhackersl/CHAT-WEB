@@ -9,18 +9,18 @@ body {
     animation: gradientAnimation 10s ease infinite;
 
    
-    /*  background-size: cover;
+      background-size: cover;
       font-family: 'Roboto', sans-serif;
       color: #ffffff;
       overflow: hidden;
       animation: backgroundAnimation 30s infinite alternate;
-    }*/
+    }
 
-  /*  @keyframes backgroundAnimation {
+   @keyframes backgroundAnimation {
       0% { background-position: 0% 0%; }
       100% { background-position: 100% 100%; }
     }
-*/
+
 .motion-background {
     position: relative;
     min-height: 100vh;

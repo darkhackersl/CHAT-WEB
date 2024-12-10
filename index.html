@@ -12,40 +12,32 @@
             <h1 class="animated-text">Welcome to Thenux AI Assist</h1>
             <p>Let Thenux assist you with AI-powered solutions.</p>
             <button id="theme-toggle" class="toggle-theme-btn">Toggle Theme</button>
-
         </header>
- <!-- Language Selector -->
-<select id="language-selector">
-    <option value="en">English</option>
-    <option value="si">Sinhala</option>
-    <option value="es">Spanish</option>
-    <option value="fr">French</option>
-</select>
 
-<!-- User Profile -->
-<div class="user-profile">
-    <img id="avatar-display" src="default-avatar.png" alt="User Avatar">
-    <label for="name">Enter Your Name:</label>
-    <input type="text" id="name" placeholder="Enter your name">
-    
-    <label for="avatar">Choose an Avatar:</label>
-    <input type="file" id="avatar" accept="image/*">
-    
-    <button onclick="saveProfile()">Save Profile</button>
-    <button id="reset-profile-btn">Reset Profile</button>
-</div>
-<div class="user-profile-section">
-    <img src="https://i.ibb.co/sgq3D5w/Lovepik-com-380113995-abstract-tech-data-circle-future-user-graphics-technology-interface.png" alt="User Avatar">
-    <div id="user-name-display" class="user-name-display">Hello, User!</div>
-</div>
+        <!-- Language Selector -->
+        <select id="language-selector">
+            <option value="en">English</option>
+            <option value="si">Sinhala</option>
+            <option value="es">Spanish</option>
+            <option value="fr">French</option>
+        </select>
 
+        <!-- User Profile -->
+        <div class="user-profile">
+            <img id="avatar-display" src="default-avatar.png" alt="User Avatar">
+            <label for="name">Enter Your Name:</label>
+            <input type="text" id="name" placeholder="Enter your name">
+            
+            <label for="avatar">Choose an Avatar:</label>
+            <input type="file" id="avatar" accept="image/*">
+            
+            <button onclick="saveProfile()">Save Profile</button>
+            <button id="reset-profile-btn">Reset Profile</button>
+        </div>
 
-
-        <!-- Quick Replies -->
-        <div class="quick-replies">
-            <button onclick="quickReply('Hello!')">Hello!</button>
-            <button onclick="quickReply('Tell me a joke')">Tell me a joke</button>
-            <button onclick="quickReply('What is AI?')">What is AI?</button>
+        <div class="user-profile-section">
+            <img src="https://i.ibb.co/sgq3D5w/Lovepik-com-380113995-abstract-tech-data-circle-future-user-graphics-technology-interface.png" alt="User Avatar">
+            <div id="user-name-display" class="user-name-display">Hello, User!</div>
         </div>
 
         <!-- AI Chatbot Section -->
@@ -64,11 +56,11 @@
         <!-- Music Player -->
         <section class="music-player">
             <h2>Relax with Music</h2>
-            <audio controls>
-                <source src="Charitha Attalage Medley.mp3" type="audio/mpeg">
+            <audio id="audio-player" controls>
+                <source id="audio-source" src="Charitha Attalage Medley.mp3" type="audio/mpeg">
                 Your browser does not support the audio element.
             </audio>
-                <button id="next-btn">Next</button>
+            <button id="next-btn">Next</button>
         </section>
 
         <!-- Footer -->
@@ -76,23 +68,10 @@
             <p>&copy; 2024 Thenux AI Assist - Thenula Panapiti</p>
         </footer>
     </div>
+
     <script src="script.js"></script>
 
-<script>
-    const audioPlayer = document.getElementById('audio-player');
-    const playPauseBtn = document.getElementById('play-pause-btn');
-
-    playPauseBtn.addEventListener('click', () => {
-        if (audioPlayer.paused) {
-            audioPlayer.play();
-            playPauseBtn.textContent = 'Pause';
-        } else {
-            audioPlayer.pause();
-            playPauseBtn.textContent = 'Play';
-        }
-    });
-</script>
-       <script>
+    <script>
         const audioPlayer = document.getElementById("audio-player");
         const nextBtn = document.getElementById("next-btn");
 
@@ -122,7 +101,7 @@
 
         // Button to manually play the next audio
         nextBtn.addEventListener("click", playNextAudio);
-       </script>
+    </script>
 
 </body>
 </html>

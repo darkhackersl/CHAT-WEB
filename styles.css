@@ -1,14 +1,13 @@
 /* General Styles */
-    body {
-      display: flex;
-         margin: 0;
+
+body {
+    margin: 0;
     font-family: 'Arial', sans-serif;
     color: #ffffff;
     text-align: center;
-      justify-content: center;
-      align-items: center;
-      min-height: 100vh;
-      margin: 0;
+    background: linear-gradient(45deg, #1d1d1d, #3a3a3a);
+    animation: gradientAnimation 10s ease infinite;
+
       background: url('https://i.ibb.co/NZSn68B/a-pair-new.png') no-repeat center center fixed;
       background-size: cover;
       font-family: 'Roboto', sans-serif;
